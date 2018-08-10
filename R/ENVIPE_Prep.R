@@ -10,6 +10,10 @@ if (me == "tim"){
 	setwd("/home/tim/git/Violence-against-women-in-Mexico")
 }
 
+if (me == "sun-sdu\\jmaburto"){
+  setwd("C:/Users/jmaburto/Documents/GitHub/Violence-against-women-in-Mexico")
+}
+
 # this works on all operating systems that might use different file seperators
 dbf.path <- file.path("Data", "ENVIPE")
 # make download directory if doesn't exist
@@ -24,7 +28,7 @@ if (!dir.exists(zip.path )){
 
 
 basenames <- c("base_de_datos_envipe_20", "base_de_datos_envipe_",
-		"bd_envipe_13",
+		"bd_envipe_13"
 		)
 # create download urls
 years <- 2011:2017
