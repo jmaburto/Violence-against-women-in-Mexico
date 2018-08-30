@@ -1,3 +1,10 @@
+#to do
+# Me gustaría ver si hay algúna diferencia del impacto de violencia en vulnerabilidad
+# entre mujeres que tienen más capital social y las que no.  Podemos usar la pregunta 
+# 5.2 "Dígame el grado de confianza que tiene en vecinos" que habla de confianza 
+# (cognitive social capital) y la pregunta 4.9 "¿Se han organizado la mayoría de los 
+# vecinos para resolverlos?" (structural social capital). 
+
 
 # Author: tim
 ###############################################################################
