@@ -72,29 +72,6 @@ ASDR.avg.diff               <- ASDR.avg[,list(Change=diff(ASDR.avg),Period=1:2),
 ASDR.avg.diff$Period        <- as.factor(ASDR.avg.diff$Period)
 levels(ASDR.avg.diff$Period)<- labels.period
 
-t1 <- cbind(ASDR.avg[sex==2 & Cause=='Homicide' & Period == '2002-2007',],ASDR.avg[sex==2 & Cause=='Homicide' & Period == '2011-2016',])
-
-write.csv(t1,'Manuscript/PAA abstract/info.csv')
-#make some preliminary graphs
-
-#trends graph
-# p <- ggplot(ASDR.avg[Cause == 'Homicide',], aes(x = Period,y = ASDR.avg,colour=(state))) +
-#   ggtitle(paste('State-specific avergae standardized mortality rates by 100 thousand women between ages ',age1, ' and ',age2,' in Mexico')) +
-#   geom_line(aes(group = state), size= 1) +
-#   theme_light()+
-#   theme(text = element_text(size=14),
-#         strip.text.x = element_text(size = 14, colour = "black"))
-# p
-# 
-# 
-  # q <- ggplot() +
-  #  ggtitle(paste('State-specific standardized mortality rates by 100 between ages ',age1, ' and ',age2,' in Mexico')) +
-  #  geom_line(data=ASDR[Cause == 'Homicide' & sex ==2,], aes(x = year,y = ASDR, group = state),col='red',alpha=.3) +
-  #  geom_line(data=ASDR[Cause == 'Homicide' & sex ==1,], aes(x = year,y = ASDR, group = state),col='blue',alpha=.3) +
-  #  theme_light()+
-  #  theme(text = element_text(size=14),
-  #        strip.text.x = element_text(size = 14, colour = "black"))
-  # q
 
  r.data            <- ASDR.avg.diff[ASDR.avg.diff$Cause=='Homicide' & ASDR.avg.diff$sex==2,]
  r.data            <- r.data[order(Period,state.name),]
@@ -123,18 +100,40 @@ pdf(file = 'Manuscript/Exhibit1.pdf',width = 6.3,height = 10,useDingbats = F)
 r
 dev.off()
 
+###
+Perception <- read.csv('Data/ENSI_2005.csv',header = T,sep = ';')
+Perception <- Perception[,1:3]
+Change <- Perception[1:32,1]
+Change <- data.table(Change)
+Change$Perception <- Perception[33:64,]$Proportion - Perception[1:32,]$Proportion
 
-## Check if in some state the rates are higher for women than men
-ASDR.check       <- ASDR[sex==1,c(1:4)]
-ASDR.check$men   <- ASDR[sex==1,c(5)]
-ASDR.check$women <- ASDR[sex==2,c(5)]
-ASDR.check$diff  <- ASDR.check$men - ASDR.check$women
-ASDR.check$rel.dif<- (ASDR.check$men - ASDR.check$women)/ASDR.check$men
-ASDR.check       <- ASDR.check[ASDR.check$Cause=='Homicide',]
-ASDR.check       <- cbind(state.name=state.name.vec[as.character(ASDR.check$state)],ASDR.check)
-ASDR.check[ASDR.check$diff < 0,]
+fig.data <- r.data[r.data$Period == 'From 2002-07 to 2011-16',]
+fig.data <- fig.data[order(state),]
+fig.data$Perception <- Change$Perception
 
-check.years <- c(2005,2011,2016)
-ASDR.check <- ASDR.check[year %in% check.years,]
-ASDR.check[ASDR.check$year==2016 & order(rel.dif/ASDR.check$men),]
+fig.data$Perception1 <-Perception[1:32,]$Proportion
+  fig.data$Perception2 <- Perception[33:64,]$Proportion
 
+cols      <-  c("#DDDD77", "#44AA77", "#CC6677","#4477AA", 'red')
+
+fig.abs<- ggplot(fig.data, aes(Change, Perception,color = region)) +
+  ggtitle(paste('Change in standardized homicide rates (15-65) and vulnerability perception '),
+          subtitle = 'from 2002-07 to 2011-16')+
+  geom_point(aes(Change, Perception),size = 3,show.legend = T) +
+  geom_text(aes(label=state.name),hjust=1.3, vjust=1.3,show.legend = F)+
+  scale_colour_manual('Region',values=cols[2:4])+
+  geom_vline(xintercept = 0)+
+  geom_hline(yintercept = 0)+
+  scale_x_continuous("Change in homicide rates", limits=c(-8,8))+
+  scale_y_continuous("Change in perception (%)", limits=c(-55,55))+
+  theme_light()+
+  theme(plot.title = element_text(size=14, face = 'bold'))+
+  theme(plot.subtitle = element_text(size=14, face = 'bold'))
+  
+pdf(file = 'Output/Exhibit1_2.pdf',width = 8,height = 7,useDingbats = F)
+fig.abs
+dev.off()
+
+fig.data[order(Perception2),]
+
+fig.data

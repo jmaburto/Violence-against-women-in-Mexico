@@ -1,0 +1,33 @@
+"","state.name","region","sex","state","Cause","Period","ASDR.avg","state.name","region","sex","state","Cause","Period","ASDR.avg"
+"1","Aguascalientes","Central",2,1,"Homicide","2002-2007",0.861030481495172,"Aguascalientes","Central",2,1,"Homicide","2011-2016",1.04355266463224
+"2","Baja California","North",2,2,"Homicide","2002-2007",2.28195026471977,"Baja California","North",2,2,"Homicide","2011-2016",4.29451276098368
+"3","Baja California Sur","North",2,3,"Homicide","2002-2007",1.65732297506245,"Baja California Sur","North",2,3,"Homicide","2011-2016",2.95156387060374
+"4","Campeche","South",2,4,"Homicide","2002-2007",0.742563061546473,"Campeche","South",2,4,"Homicide","2011-2016",1.90356030380684
+"5","Coahuila","North",2,5,"Homicide","2002-2007",1.314647768181,"Coahuila","North",2,5,"Homicide","2011-2016",4.59447986851605
+"6","Colima","Central",2,6,"Homicide","2002-2007",1.39592829565043,"Colima","Central",2,6,"Homicide","2011-2016",6.33172288611147
+"7","Chiapas","South",2,7,"Homicide","2002-2007",1.74434261632036,"Chiapas","South",2,7,"Homicide","2011-2016",1.99642496847344
+"8","Chihuahua","North",2,8,"Homicide","2002-2007",2.99507566675642,"Chihuahua","North",2,8,"Homicide","2011-2016",10.2871247844783
+"9","Mexico City","Central",2,9,"Homicide","2002-2007",1.85613475744114,"Mexico City","Central",2,9,"Homicide","2011-2016",2.4212364675986
+"10","Durango","North",2,10,"Homicide","2002-2007",1.69119269666136,"Durango","North",2,10,"Homicide","2011-2016",3.40811780616137
+"11","Guanajuato","Central",2,11,"Homicide","2002-2007",0.835663308391609,"Guanajuato","Central",2,11,"Homicide","2011-2016",2.11575427628506
+"12","Guerrero","South",2,12,"Homicide","2002-2007",3.69569513038647,"Guerrero","South",2,12,"Homicide","2011-2016",10.1968939880442
+"13","Hidalgo","Central",2,13,"Homicide","2002-2007",0.727155333272731,"Hidalgo","Central",2,13,"Homicide","2011-2016",2.03621492556034
+"14","Jalisco","Central",2,14,"Homicide","2002-2007",1.18275600021628,"Jalisco","Central",2,14,"Homicide","2011-2016",2.47948599058323
+"15","Mexico State","Central",2,15,"Homicide","2002-2007",2.89877467239642,"Mexico State","Central",2,15,"Homicide","2011-2016",3.6406335711907
+"16","Michoacan","Central",2,16,"Homicide","2002-2007",2.32514351772031,"Michoacan","Central",2,16,"Homicide","2011-2016",3.31595650209825
+"17","Morelos","South",2,17,"Homicide","2002-2007",1.4672683303945,"Morelos","South",2,17,"Homicide","2011-2016",4.98034177653167
+"18","Nayarit","Central",2,18,"Homicide","2002-2007",2.21830812821656,"Nayarit","Central",2,18,"Homicide","2011-2016",3.42224395459291
+"19","Nuevo Leon","North",2,19,"Homicide","2002-2007",0.738686767220642,"Nuevo Leon","North",2,19,"Homicide","2011-2016",4.11702740350961
+"20","Oaxaca","South",2,20,"Homicide","2002-2007",2.89339833986306,"Oaxaca","South",2,20,"Homicide","2011-2016",3.79350329098861
+"21","Puebla","South",2,21,"Homicide","2002-2007",1.53835425636349,"Puebla","South",2,21,"Homicide","2011-2016",1.89670676880549
+"22","Queretaro","Central",2,22,"Homicide","2002-2007",1.03978760141702,"Queretaro","Central",2,22,"Homicide","2011-2016",1.57964867413186
+"23","Quintana Roo","South",2,23,"Homicide","2002-2007",2.12379959950956,"Quintana Roo","South",2,23,"Homicide","2011-2016",2.73257023469805
+"24","San Luis Potosi","North",2,24,"Homicide","2002-2007",0.910060836707491,"San Luis Potosi","North",2,24,"Homicide","2011-2016",2.60067308665337
+"25","Sinaloa","North",2,25,"Homicide","2002-2007",1.65120413738693,"Sinaloa","North",2,25,"Homicide","2011-2016",4.60726730956402
+"26","Sonora","North",2,26,"Homicide","2002-2007",1.62220503348021,"Sonora","North",2,26,"Homicide","2011-2016",3.03121345611897
+"27","Tabasco","South",2,27,"Homicide","2002-2007",1.19806762205642,"Tabasco","South",2,27,"Homicide","2011-2016",1.94070175149169
+"28","Tamaulipas","North",2,28,"Homicide","2002-2007",1.72455897346559,"Tamaulipas","North",2,28,"Homicide","2011-2016",5.03475358920626
+"29","Tlaxcala","Central",2,29,"Homicide","2002-2007",1.42948774912102,"Tlaxcala","Central",2,29,"Homicide","2011-2016",1.77473885205608
+"30","Veracruz","South",2,30,"Homicide","2002-2007",1.04737134209253,"Veracruz","South",2,30,"Homicide","2011-2016",2.44603514248289
+"31","Yucatan","South",2,31,"Homicide","2002-2007",0.481157885205623,"Yucatan","South",2,31,"Homicide","2011-2016",0.626789696057577
+"32","Zacatecas","North",2,32,"Homicide","2002-2007",1.21510229756023,"Zacatecas","North",2,32,"Homicide","2011-2016",4.11228947831215
