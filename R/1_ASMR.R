@@ -13,8 +13,15 @@ setwd("C:/Users/jmaburto/Documents/GitHub/Violence-against-women-in-Mexico")
 #### 14. other heart diseases, 15. Ill-defined causes, 16. All other Non-AM
 #### Note: these data do not contain Not Specified categories
 
-# These data comes from INEGI data micro files up to 2016
-load('Data/Counts&Rates_1990-2016Mex.RData')
+#### violence
+####1 Hubo violencia familiar
+####2 Hubo violencia no familiar
+####8 No aplica cuando no es homicidio
+####9 No especificado
+####999 No había opción en Certificado, a partir del 2000
+
+# These data comes from INEGI data micro files up to 2017
+load('Data/Deaths_Counts-1990-2017_Violence.RData')
 
 # Subset data to 11 years before and after 2005
 Data_Counts <- Data_Counts[Data_Counts$year >= 1994 & Data_Counts$year < 2017,]
