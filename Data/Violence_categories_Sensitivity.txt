@@ -1,0 +1,121 @@
+
+   999 
+444665 
+[1] 1998 (The category was not present in the certificate)
+
+   999 
+443950 
+[1] 1999  (The category was not present in the certificate)
+
+     0      1      8 
+ 10538    199 426930 
+[1] 2000
+From PDF
+Valor Etiqueta
+1 Hubo violencia familiar
+2 Hubo violencia no familiar
+8 No aplica cuando no es homicidio
+9 No especificada
+
+From Excel
+1	Si
+8	No aplica
+0	No especificado
+
+
+     0      1      8 
+ 10050    235 432842 
+[1] 2001
+
+Valor Etiqueta
+1 Hubo violencia familiar
+2 Hubo violencia no familiar
+8 No aplica cuando no es homicidio
+9 No especificada
+
+     0      1      8 
+  9891    197 449599 
+[1] 2002
+
+from excel
+1	Si
+8	No aplica muerte natural
+0	No especificado
+
+
+     0      1      2      8 
+  8858    331    898 462053 
+[1] 2003
+
+from Excel
+1	Si
+8	No aplica muerte natural
+0	No especificado
+
+     0      1      2      8 
+  8295    274    761 464087 
+[1] 2004
+
+     0      1      2      8 
+  8734    244    948 485314 
+[1] 2005
+
+0	NO ESPECIFICADO
+1	HUBO VIOLENCIA FAMILIAR
+2	HUBO VIOLENCIA NO FAMILIAR
+8	NO APLICA PARA MUERTE NATURAL (A00 – R99) o VIOLENTAS, EXCEPTO HOMICIDIOS
+
+
+     1      2      8      9 
+   240    946 484017   9268 
+[1] 2006
+
+1 Hubo violencia familiar
+2 Hubo violencia no familiar
+8 No aplica cuando no es homicidio
+9 No especificada
+
+     0      1      2      8 
+  7911    197    760 505552 
+[1] 2007
+
+     0      1      2      8 
+ 12787    220   1000 525523 
+[1] 2008
+
+
+     1      2      8      9 
+   230   1069 544869  18505 
+[1] 2009
+
+     1      2      8      9 
+   224   1558 566261  23975 
+[1] 2010
+
+     1      2      8      9 
+   243   1562 563480  25408 
+[1] 2011
+
+     1      2      8      9 
+   253    461 576387  25253 
+[1] 2012
+
+     1      2      8      9 
+   249    383 588766  22431 
+[1] 2013
+
+     1      2      8      9 
+   314    347 613631  19349 
+[1] 2014
+
+     1      2      8      9 
+   164    369 634932  20229 
+[1] 2015
+
+     1      2      8      9 
+   165    459 661204  23935 
+[1] 2016
+
+     1      2      8      9 
+   111     59 670968  31909 
+[1] 2017
