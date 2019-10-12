@@ -3,7 +3,7 @@ library(data.table)
 library(reshape2)
 library(ggplot2)
 
-setwd("C:/Users/jmaburto/Documents/GitHub/Violence-against-women-in-Mexico")
+setwd("C:/Users/jmaburto.SAM/Documents/GitHub/Violence-against-women-in-Mexico")
 
 #### sex=1 <- males
 #### 1. Infectious and respiratory diseases, 2. Cancers, 3. Circulatory, 
@@ -126,7 +126,7 @@ write.csv(t1,'Manuscript/PAA abstract/info.csv')
            subtitle = paste('thousand women between ages ',age1, ' and ',age2))+
    geom_vline(xintercept = 0)+
    geom_point(aes(Change, state.name,col=Period, shape=Period),size = 3) +
-   facet_grid(region+sex ~., scales = "free", space = "free") +
+   facet_grid(region ~., scales = "free", space = "free") +
    theme_light()+
    theme(plot.title = element_text(size=14, face = 'bold'))+
    theme(plot.subtitle = element_text(size=14, face = 'bold'))+
@@ -143,6 +143,11 @@ write.csv(t1,'Manuscript/PAA abstract/info.csv')
 pdf(file = 'Manuscript/Exhibit1.pdf',width = 6.3,height = 10,useDingbats = F)
 r
 dev.off()
+
+#average homicides in different periods
+ASDR.avg[, mean(ASDR.avg), by = list(sex,Period)]
+
+t1 <- ASDR.avg[order(sex,Period,ASDR.avg)]
 
 
 ## Check if in some state the rates are higher for women than men
